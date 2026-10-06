@@ -1,8 +1,13 @@
+import Marque from "@/components/news/Marque";
+
 const Home = () => {
   return (
-    <div>
-        Home
-    </div>
+      <div>
+          <Marque />
+          <p>
+             
+          </p>
+      </div>
   );
 };
 
