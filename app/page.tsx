@@ -1,13 +1,13 @@
-import Marque from "@/components/news/Marque";
+
+import NewsSections from "@/components/news/NewsSections";
 
 const Home = () => {
   return (
-      <div>
-          <Marque />
-          <p>
-             
-          </p>
-      </div>
+      <>
+          
+          <NewsSections/>
+          
+      </>
   );
 };
 

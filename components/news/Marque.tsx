@@ -8,7 +8,7 @@ const Marque = async() => {
     const data = await res.json();
     const headlines: HeadLine[] = data.data;
     return (
-        <div className="bg-red-700 text-white">
+        <div className="bg-red-700 text-white mb-4">
             <Container className="flex items-center">
                 <p className="bg-red-800 py-2 font-bold px-3">সর্বশেষ</p>
                 <MarqueeText
@@ -16,7 +16,7 @@ const Marque = async() => {
                     duration={10}
                 >
                     {headlines.map((headline) => (
-                        <Link className="" href={headline.link} key={headline.id}>
+                        <Link className="hover:underline" href={`/news/${headline.id}`} key={headline.id}>
                             {headline.title} <span className="mx-3">•</span>
                         </Link>
                     ))}

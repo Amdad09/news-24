@@ -9,7 +9,7 @@ const Navlinks = async () => {
   return (
       <div className="flex gap-4 justify-center pt-4">
           {navs.map((category) => (
-               <Link href={category.slug} key={category.topicId}>
+               <Link href={`/category/${category.slug}`} key={category.topicId}>
                   {category.title}
               </Link>
           ))}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Container from '../ui/Container';
 import Navlinks from '../navbar/Navlinks';
+import Link from 'next/link';
 
 const Navbar = () => {
   const date = new Date().toLocaleDateString('bn-BD', {
@@ -11,7 +12,7 @@ const Navbar = () => {
             <Container>
                 <header className="relative flex items-center justify-between">
                     {/* Center Logo */}
-                    <div className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
+                    <Link href='/' className="absolute left-1/2 -translate-x-1/2 flex items-center gap-4">
                         <Image
                             src="/logo.png"
                             alt="logo"
@@ -26,7 +27,7 @@ const Navbar = () => {
 
                             <p className="text-xs text-neutral-500">{date}</p>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Right Actions */}
                     <div className="ml-auto flex items-center gap-4">
